@@ -1,0 +1,71 @@
+﻿<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+                <h3>About US</h3>
+                <p>
+                    A blog is a discussion or informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries. Posts are typically displayed in reverse chronological order, so that the most recent post appears first, at the top of the web page. Until 2009, blogs were usually the work of a single individual,[citation needed] occasionally of a small group, and often covered a single subject or topic. In the 2010s, "multi-author blogs" emerged, featuring the writing of multiple authors and sometimes professionally edited
+                </p>
+                <div class="read">
+                    <a href="/About/" class="btn btn-primary read-m">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+                <div class="tech-btm">
+                    <h3>Latest Posts</h3>
+
+                    @await Component.InvokeAsync("LastBlogs")
+                </div>
+            </div>
+            <!-- subscribe -->
+            <div class="col-lg-4 subscribe-main footer-grid-agileits-w3ls text-left">
+                <h2>Signup to our newsletter</h2>
+                <div class="subscribe-main text-left">
+                    @await Html.PartialAsync("~/Views/NewsLetter/SubscribeMail.cshtml")
+                </div>
+                <!-- //subscribe -->
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer-cpy text-center">
+            <div class="footer-social">
+                <div class="copyrighttop">
+                    <ul>
+                        <li class="mx-3">
+                            <a class="facebook" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="facebook" href="#">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+                        <li class="mx-3">
+                            <a class="facebook" href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                                <span>Google+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="facebook" href="#">
+                                <i class="fab fa-pinterest-p"></i>
+                                <span>Pinterest</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w3layouts-agile-copyrightbottom">
+                <p>
+                    ©  @DateTime.Now.Year Weblog. All Rights Reserved | Design by
+                    <a href="http://w3layouts.com/">W3layouts</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- //footer -->
+    </div>
+</footer>

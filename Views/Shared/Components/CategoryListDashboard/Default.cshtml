@@ -1,0 +1,38 @@
+﻿@using EntityLayer.Concrete
+@model List<Category>
+
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Project Status</h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th> # </th>
+                                <th> Category Name </th>
+                                <th> Status </th>
+                                <th> Process </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.CategoryID</td>
+                                    <td> @item.CategoryName </td>
+                                    <td> @(item.CategoryStatus ? "Active":"Passive") </td>
+                                    <td>
+                                        <a id="delBtn" class="btn btn-danger" href="#">Delete</a>
+                                        <a id="editBtn" class="btn btn-warning" href="#">Edit</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

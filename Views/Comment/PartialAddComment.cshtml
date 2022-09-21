@@ -1,0 +1,12 @@
+﻿<div class="comment-top">
+    <h4>Leave a Comment</h4>
+    <div class="comment-bottom">
+        <form action="/Comment/PartialAddComment/" method="post">
+            <input class="form-control" type="text" name="CommentUserName" placeholder="Name" required="">
+            <input class="form-control" type="text" name="CommentTitle" placeholder="Subject" required="">
+            <textarea class="form-control" name="CommentContent" placeholder="Message..." required=""></textarea>
+            <input type="hidden" name="BlogID" value="@ViewBag.bid" />
+            <button type="submit" class="btn btn-primary submit">Submit</button>
+        </form>
+    </div>
+</div>
