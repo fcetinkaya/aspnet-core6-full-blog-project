@@ -12,7 +12,7 @@ I have prepared a project for those who want to get started with Asp.Net Core 5 
 In examples it is used in SQL Server database.
 
 ## Screenshots
-![Example screenshot](index.jpg)
+![Example screenshot](screenshot/Blog-Index43.jpg)
 
 
 ## Projects
